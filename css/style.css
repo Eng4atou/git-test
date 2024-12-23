@@ -30,16 +30,22 @@ header {
 }
 
 .nav-item a:hover {
-    color: rgb(255, 255, 255);
+    border-bottom: 2px solid crimson;
 }
 
-.nav-right {
+
+/* .nav-border {
+    border-bottom: 2px solid crimson;
+} */
+
+
+/* .nav-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
+} */
 
-.nav-right button {
+.btn {
     padding: 0.5rem 1rem;
     border: none;
     background-color: crimson;
@@ -48,7 +54,7 @@ header {
     cursor: pointer;
 }
 
-.nav-right button:hover {
+.nav-item .btn:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
