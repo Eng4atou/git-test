@@ -59,6 +59,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 10px;
+        background: #ececec;
     }
     
     .content-section {
@@ -109,6 +110,141 @@
         top: 20%;
         width: 70%;
     }
+    
+    .center-text {
+        text-align: center;
+        margin: 10px;
+        line-height: 1.5;
+    }
+    
+    .about-us-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .about-us-section .image image {
+        width: 100%;
+        height: auto;
+        grid-column: 1/2;
+        margin: 5%;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .description {
+        color: gray;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+    
+    .checklist {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .checklist li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .checklist li::before {
+        content: '✔';
+        color: red;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    
+    .boook {
+        margin: 5%;
+        padding: 3rem;
+    }
+    
+    .book-center {
+        width: 25%;
+        text-align: center;
+        padding: 10px;
+        border: 3px solid darkgrey;
+    }
+    
+    br {
+        color: crimson;
+    }
+    
+    .why-choose-yummy {
+        padding: 50px 20px;
+    }
+    
+    .container2 {
+        display: flex;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    
+    .box {
+        background: #fff;
+        border-radius: 2px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1;
+        min-width: 250px;
+        text-align: center;
+    }
+    
+    .red-box {
+        background: #d32f2f;
+        color: #fff;
+        flex: 2;
+        text-align: left;
+    }
+    
+    .red-box h2 {
+        margin-top: 0;
+    }
+    
+    .red-box button {
+        background: #b71c1c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    .red-box button:hover {
+        background: #ff5252;
+    }
+    
+    .icon {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #d32f2f;
+    }
+    /* .scroll-up {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #d32f2f;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .scroll-up:hover {
+        background: #ff5252;
+    } */
 </style>
 
 <body>
@@ -137,34 +273,65 @@
         </div>
         <img src="https://bootstrapmade.com/content/demo/Yummy/assets/img/hero-img.png" alt="food">
     </section>
+    <h1 class="center-text">About Us</h1>
+    <p class="center-text">Learn More About Us</p>
 
-    <section class="About-section">
-        <h1>About Us</h1>
-        <p>Learn More About Us</p>
-        <div class="about-us">
-            <img src="https://bootstrapmade.com/content/demo/Yummy/assets/img/about.jpg" alt="about">
-            <div class="boook">
-                <p>Book a Table
-                    <br>+1 5589 55488 55</p>
-            </div>
-            <div class="about-us-content">
-                <p>It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain</p>
-                <ul>
-                    <li>I do not work at all except to get some advantage out of it.</li>
-                    <li>Do not be angry with the pain in the rebuke in the pleasure he wants.
-                    </li>
-                    <li>I do not work at all except to get some advantage out of it.</li>
-                </ul>
-                <p>I do not work at all except to get some advantage out of it. Do not be angry with the pain in the reprimand in the pleasure he wants to be a hair from the pain in the hope that there is no breeding. Unless they are blinded by lust, they
-                    will not come out</p>
-            </div>
-            <div class="wtch-vidoe">
-                <video src="https://videos.pexels.com/video-files/857138/857138-hd_1280_720_30fps.mp4"></video>
-                <img src="https://bootstrapmade.com/content/demo/Yummy/assets/img/about-2.jpg" alt="about">
-            </div>
-
+    <div class="about-us-section">
+        <div class="image">
+            <img class="about-us" src="https://bootstrapmade.com/content/demo/Yummy/assets/img/about.jpg" alt="about">
         </div>
+
+        <div class="content">
+            <p class="description">It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain</p>
+            <ul class="checklist">
+                <li>I do not work at all except to get some advantage out of it.</li>
+                <li>Do not be angry with the pain in the rebuke in the pleasure he wants.
+                </li>
+                <li>I do not work at all except to get some advantage out of it.</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="boook">
+        <p class="book-center">Book a Table
+            <br class="book-center br-center">+1 5589 55488 55</p>
+    </div>
+
+    <section class="why-choose-yummy">
+        <div class="container2">
+            <div class="box red-box">
+                <h2>Why Choose Yummy</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
+                    optio ad corporis.
+                </p>
+                <button class="learn-more">Learn More →</button>
+            </div>
+            <div class="box">
+                <div class="icon">📊</div>
+                <h3>Corporis voluptates officia eiusmod</h3>
+                <p>
+                    Consequuntur sunt aut quasi enim aliquam quae harum pariatur labori nisi ut aliquip.
+                </p>
+            </div>
+            <div class="box">
+                <div class="icon">💎</div>
+                <h3>Ullamco laboris ladore lore pan</h3>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                </p>
+            </div>
+            <div class="box">
+                <div class="icon">📦</div>
+                <h3>Labore consequatur incidid dolore</h3>
+                <p>
+                    Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere.
+                </p>
+            </div>
+        </div>
+        <!-- <button class="scroll-up">⬆</button> -->
     </section>
+
 </body>
 
 </html>
