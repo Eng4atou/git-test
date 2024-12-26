@@ -48,6 +48,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    background: #ececec;
 }
 
 .home {
@@ -95,6 +96,6 @@
 img {
     width: 80%;
     position: relative;
-    top: 20%;
+    top: 10%;
     left: 10%;
 }
