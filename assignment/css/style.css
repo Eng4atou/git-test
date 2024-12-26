@@ -110,8 +110,7 @@ h2,
 .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 2rem;
-    margin-top: 5%; */
+    gap: 1rem;
     margin-top: 5%;
 }
 
@@ -130,9 +129,17 @@ h2,
     list-style: none;
 }
 
-.list ::before {
+
+/* .list li::before {
     content: "✔️";
     color: crimson;
     font-size: 1.5rem;
     margin-right: 0.5rem;
+} */
+
+.list li::before {
+    content: '✔';
+    color: crimson;
+    font-weight: bold;
+    margin-right: 10px;
 }
