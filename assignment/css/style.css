@@ -88,9 +88,18 @@
 }
 
 .home a {
-    margin-left: 1rem;
+    margin-left: 0.1rem;
     text-decoration: none;
     color: black;
+}
+
+.home i {
+    margin-left: 1rem;
+    color: crimson;
+}
+
+.home a:hover {
+    color: crimson;
 }
 
 img {
