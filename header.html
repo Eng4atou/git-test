@@ -6,6 +6,7 @@
     <title>home</title>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="header.css">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
     * {
@@ -228,23 +229,28 @@
         margin-bottom: 10px;
         color: #d32f2f;
     }
-    /* .scroll-up {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: #d32f2f;
-        color: #fff;
-        border: none;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-        cursor: pointer;
+    
+    #images {
+        background-image: linear-gradient(rgba(0, 0, 255, 0.208), rgba(0, 0, 255, 0.235)), url("https://bootstrapmade.com/content/demo/Yummy/assets/img/stats-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 5% 0px 5% 0px;
+        width: 100%;
+        height: 50vh;
     }
     
-    .scroll-up:hover {
-        background: #ff5252;
-    } */
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem;
+        height: 50vh;
+    }
+    
+    .boxes {
+        font-size: 2em;
+    }
 </style>
 
 <body>
@@ -332,6 +338,80 @@
         <!-- <button class="scroll-up">⬆</button> -->
     </section>
 
+    <section id="images">
+        <div class="flex-container">
+            <div class="boxes">
+                <h3>232
+                    <br>Clients</h3>
+            </div>
+            <div class="boxes">
+                <h3>232
+                    <br>Clients</h3>
+            </div>
+            <div class="boxes">
+                <h3>232
+                    <br>Clients</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="center-menu">
+            <h1>Our Menu</h1>
+
+            <p>Check Our Yummy Menu</p>
+        </div>
+        <div class="menu-container">
+            <ul class="menu-list">
+                <li class="menu-items">Starters</li>
+                <li class="menu-items">Breakfast</li>
+                <li class="menu-items">Lunch</li>
+                <li class="menu-items">Dinner</li>
+            </ul>
+        </div>
+        <div class=" items">
+            <h1>Menu
+                <br>Starters
+            </h1>
+        </div>
+
+        <div class="img-menu">
+            <img src="https://bootstrapmade.com/content/demo/Yummy/assets/img/menu/menu-item-1.png" alt="Menu Item 1">
+
+        </div>
+        <div class="Starters">
+
+            <h3>Magnam Tiste
+            </h3>
+            <p> Lorem, deren, trataro, filede, nerada
+            </p>
+            <b>                    $5.95
+                    </b>
+        </div>
+        <div class="menus">
+            <div class="menu-items">
+                <img src="https://bootstrapmade.com/content/demo/Yummy/assets/img/menu/menu-item-1.png" alt="Menu Item 1">
+
+                <h3>Magnam Tiste</h3>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <div class="price">$5.95</div>
+            </div>
+            <div class="menu-items">
+                <img src="https://bootstrapmade.com/content/demo/Yummy/assets/img/menu/menu-item-1.png" alt="Menu Item 1">
+                <h3>Magnam Tiste</h3>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <div class="price">$5.95</div>
+            </div>
+            <div class="menu-items">
+                <img src="https://bootstrapmade.com/content/demo/Yummy/assets/img/menu/menu-item-1.png" alt="Menu Item 1">
+                <h3>Magnam Tiste</h3>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <div class="price">$5.95</div>
+            </div>
+
+        </div>
+
+    </section>
 </body>
 
 </html>
