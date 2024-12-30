@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Animation</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2f91;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    font-size: 100px;
+    color: #fff;
+}
+
+.year {
+    display: flex;
+}
+
+.digit {
+    position: relative;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+#four {
+    z-index: 1;
+}
+
+.balloon {
+    position: absolute;
+    top: 0;
+    right: -120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: moveIn 1s ease-in forwards, moveUp 3s ease-in-out 1s forwards;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #2e2f91;
+}
+
+.string {
+    width: 4px;
+    height: 100px;
+    background-color: yellow;
+}
+
+@keyframes moveIn {
+    from {
+        right: -200px;
+    }
+    to {
+        right: 50px;
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="year">
+            <span class="digit">2</span>
+            <span class="digit">0</span>
+            <span class="digit">2</span>
+            <span class="digit" id="four">4</span>
+        </div>
+        <div class="balloon">
+            <div class="circle">5</div>
+            <div class="string"></div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const four = document.getElementById("four");
+    const balloon = document.querySelector(".balloon");
+
+    setTimeout(() => {
+        four.style.transform = "translateY(-100px)";
+        four.style.opacity = "0";
+    }, 1000);
+
+    setTimeout(() => {
+        four.textContent = "5";
+        four.style.transform = "translateY(0)";
+        four.style.opacity = "1";
+    }, 2000);
+});
+
+    </script>
+</body>
+</html>
