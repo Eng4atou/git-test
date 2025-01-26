@@ -8,3 +8,18 @@
     --Font-Weight-800: 800;
     --Font-Size-16: 16px;
 }
+
+*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1{
+    line-height: 1.1;
+}
