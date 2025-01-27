@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social links profile</title>
+    <style>
+        :root {
+            --primary-color: dodgerblue;
+            --white-color: #fff;
+            --main-colors: greenyellow;
+            --container-color: hsl(0, 0%, 20%);
+            --list-color: hsl(0, 0%, 12%);
+            --bg-color: hsl(0, 0%, 8%);
+            --text-color: #ccc;
+            --font-size: 14px;
+            --font-weight: 900;
+        }
+
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       body{
+        background: var(--bg-color);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text-color);
+        font-size: var(--font-size);
+        font-weight: var(--font-weight);
+       }
+
+       .wrapper{
+        display:grid ;
+        place-items: center;
+        height: 100dvh;
+       }
+       .profile-container{
+        background: var(--container-color);
+        width: 200px;
+        padding: 1.5rem;
+        border-radius: 10px;
+        text-align: center;
+       }
+
+       img{
+        width: 50%;
+        border-radius: 50%;
+       }
+       .user-name{
+        font-size: var(--font-size);
+        font-weight: var(--font-weight);
+        margin-bottom: 0.5rem;
+       }
+       .user-location{
+color: var(--main-colors);
+font-weight: var(--font-weight);
+       }
+
+.desc{
+    font-size: var(--font-size);
+        font-weight: var(--font-weight);
+        margin-bottom: 0.5rem;
+}
+
+.list-items{
+    padding: 10px;
+    width: 100%;
+    /* margin-top: 1.5rem; */
+}
+
+ul li{
+    list-style: none;
+    background: var(--list-color);
+    margin-bottom: 10px;
+padding: 0 10px;
+width: 90%;
+text-align: center;
+border-radius: 5px;
+
+}
+     
+a{
+    color: var(--white-color);
+text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+        <div class="profile-container">
+            <img src="assets/images/avatar-jessica.jpeg" alt="Profile">
+            <h1 class="user-name">Jessica Randall</h1>
+            <p class="user-location">London, United Kingdom</p>
+            <p class="desc">"Front-end developer and avid reader."</p>
+            <ul class="list-items" role="list">
+                <li><a href="#" class="user-lists">GitHub</a></li>
+                <li><a href="#" class="user-lists">Frontend Mentor</a></li>
+                <li><a href="#" class="user-lists">LinkedIn</a></li>
+                <li><a href="#" class="user-lists">Twitter</a></li>
+                <li><a href="#" class="user-lists">Instagram</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
