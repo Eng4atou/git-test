@@ -89,6 +89,7 @@ body {
     display: grid;
     place-items: center;
     min-height: 100dvh;
+    
 }
 
 .profile-container {
