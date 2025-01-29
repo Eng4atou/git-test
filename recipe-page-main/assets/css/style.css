@@ -29,7 +29,8 @@ body{
 }
 
 img{
-    width: 250px;
+    width: 350px;
+    padding: .5rem;
     margin-bottom: .8rem;
     border-radius: 10px;
     
@@ -37,6 +38,7 @@ img{
 
 .recipe-title,.recipe-desc{
     font-size: 14px;
+
     margin-left: 10px;
 }
 
