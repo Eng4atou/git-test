@@ -39,3 +39,20 @@ body {
     letter-spacing: 5px;
     color: #ccc;
 }
+
+.product-info .product-title {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.product-info .product-desc {
+    color: #999;
+    font-size: 18px;
+}
+
+.product-info .product-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* color: cadetblue; */
+}
