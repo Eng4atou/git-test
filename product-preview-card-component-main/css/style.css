@@ -4,3 +4,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    min-height: 100vh;
+    background: #ccc;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    background: #fff;
+    border-radius: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.product-img img {
+    width: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    width: 200px;
+    padding: 4px;
+}
