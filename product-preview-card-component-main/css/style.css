@@ -56,3 +56,26 @@ body {
     padding: 10px;
     /* color: cadetblue; */
 }
+
+.product-info .product-price .product-price-new {
+    color: green;
+    font-weight: bold;
+}
+
+.product-info .product-price .product-price-old {
+    text-decoration: line-through;
+}
+
+.product-info .product-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.product-info .product-btn .product-btn-add {
+    padding: 5px 10px;
+    border: none;
+    width: 100%;
+    color: white;
+    background: green;
+}
