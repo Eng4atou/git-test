@@ -1,0 +1,38 @@
+/* reset css style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* main css style */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --bg-color: #f1f1f1;
+    --border-card1: crimson;
+    --border-card2: #fdcb6e;
+    --border-card3: #00cec9;
+    --border-card4: #007bff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: crimson;
+}
