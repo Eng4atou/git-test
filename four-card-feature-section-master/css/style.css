@@ -7,21 +7,12 @@
 }
 
 
-/* main css style */
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f3f3f3;
-    color: #333;
-    line-height: 1.5;
-    font-size: 1.1rem;
-    min-height: 100vh;
-    min-width: 100vh;
-}
+/* general css style */
 
 :root {
     --primary-color: #007bff;
     --secondary-color: #6c757d;
+    --line-height: 1.5;
     --bg-color: #f1f1f1;
     --border-card1: crimson;
     --border-card2: #fdcb6e;
@@ -34,5 +25,55 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: crimson;
+    background-color: var(--border-card2);
+}
+
+
+/* main css style */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    line-height: var(--line-height);
+    font-size: 1.1rem;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.wrapper {
+    background: #fff;
+    padding: 40px;
+    width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* title and subtitle */
+
+.title {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 1;
+}
+
+.sub-title {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.desc {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
 }
