@@ -17,26 +17,16 @@
 
 ::-webkit-scrollbar {
     height: 0.3rem;
-    /* Adjust the height for horizontal scrollbar */
 }
-
-
-/* Style the track (background) */
 
 ::-webkit-scrollbar-track {
     background: transparent;
 }
 
-
-/* Style the draggable part (thumb) */
-
 ::-webkit-scrollbar-thumb {
     background-color: hsl(228, 45%, 44%);
     border-radius: 10px;
 }
-
-
-/* Optional: Hover effect on the scrollbar thumb */
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: hsl(228, 45%, 54%);
