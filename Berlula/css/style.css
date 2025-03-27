@@ -134,6 +134,10 @@
             background: #dce8ed;
         }
         
+        .about-text {
+            animation: mymove 1s infinite;
+        }
+        
         .grid-about {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
