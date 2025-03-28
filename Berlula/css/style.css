@@ -48,6 +48,7 @@
             padding: 0;
             height: 100vh;
         }
+        /* main style */
         
         .header {
             display: flex;
@@ -133,10 +134,24 @@
         .about-us {
             background: #dce8ed;
         }
-        
-        .about-text {
+        /* .about-text {
             animation: mymove 1s infinite;
         }
+        
+        @keyframes mymove {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(50px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        } */
+        /* .animated-element {
+            animation: mymove 1s infinite;
+          } */
         
         .grid-about {
             display: grid;
