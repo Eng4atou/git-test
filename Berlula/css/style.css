@@ -297,6 +297,20 @@
             color: #3d5823;
             text-shadow: -3px -3px 0 #b3c49b, 3px -3px 0 #b3c49b, -3px 3px 0 #b3c49b, 3px 3px 0 #b3c49b;
             text-align: center;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: hye steps(20) 4s infinite alternate;
+        }
+        /* Typing Effect */
+        
+        @keyframes hye {
+            0% {
+                width: 0ch;
+            }
+            100% {
+                width: 20ch;
+            }
         }
         /* gallery */
         
