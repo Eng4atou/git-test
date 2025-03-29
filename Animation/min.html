@@ -30,14 +30,15 @@
         
         h1 {
             font-weight: bold;
-            font-size: 64px;
-            border-right: 4px solid red;
-            animation: typing steps(27) 4s forwards, cursor 0.8s step-end 3;
+            font-size: 24px;
+            border-right: 2px solid red;
+            /* animation: typing steps(27) 4s forwards, cursor 0.8s step-end 3; */
             /* animation: typing steps(21) 4s infinite alternate, cursor 0.8s infinite; */
             white-space: nowrap;
             opacity: 0;
             overflow: hidden;
             color: #fff;
+            animation: kk steps(25) 4s infinite alternate, cursor 0.4s infinite;
         }
         /* Cursor Blinking Effect */
         
@@ -52,7 +53,7 @@
         }
         /* Typing Effect */
         
-        @keyframes typing {
+        @keyframes kk {
             0% {
                 opacity: 0;
                 width: 0ch;
