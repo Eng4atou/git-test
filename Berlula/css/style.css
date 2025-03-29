@@ -89,7 +89,20 @@
             height: 100vh;
             width: 100%;
             box-sizing: border-box;
+            /* opacity: 0;
+            animation: right-side 0.9s ease-in forwards;
+            -webkit-animation: right-side 0.9s ease-in forwards; */
         }
+        /* @keyframes right-side {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        } */
         
         .content {
             position: relative;
