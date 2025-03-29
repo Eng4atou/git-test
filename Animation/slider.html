@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f5f5f5;
+        }
+        
+        .slider {
+            width: 80%;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .slider-track {
+            display: flex;
+            width: 200%;
+            animation: scroll 10s linear infinite;
+        }
+        
+        .slide {
+            min-width: 100%;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .boll {
+            background: dodgerblue;
+            border-radius: 50%;
+            max-width: 100px;
+            height: auto;
+            width: 100%;
+            display: block;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slider">
+        <div class="slider-track">
+            <div class="slide">
+                <div class="boll"></div>
+            </div>
+
+            <div class="slide"><img src="https://via.placeholder.com/800x400/ff7f7f/fff" alt="Slide 1"></div>
+            <div class="slide"><img src="https://via.placeholder.com/800x400/77aaff/fff" alt="Slide 2"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
