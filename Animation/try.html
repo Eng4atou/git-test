@@ -19,17 +19,38 @@
         background: #f0f0f0;
         font-family: sans-serif;
         line-height: 1.5;
+        overflow-x: none;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background: #ccc;
     }
     /* Layout */
     
     .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: repeat(3, 1fr); */
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 20px;
         place-items: center;
     }
+    
+    .box-one,
+    .box-two {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
     /* Box Style */
+    
+    .box1 {
+        margin-bottom: 10px;
+    }
     
     .box {
         width: 290px;
@@ -39,10 +60,11 @@
         overflow: hidden;
         /* transition: slider 0.5 ease-in; */
         opacity: 0;
-        animation: slider 0.5s ease-in forwards;
+        margin-bottom: 10px;
+        animation: left-side 0.9s ease-in forwards;
     }
     
-    @keyframes slider {
+    @keyframes left-side {
         0% {
             opacity: 0;
             transform: translateX(-100%);
@@ -96,10 +118,10 @@
         overflow: hidden;
         /* transition: slider 0.5 ease-in; */
         opacity: 0;
-        animation: sliders 0.5s ease-in forwards;
+        animation: right-side 0.9s ease-in forwards;
     }
     
-    @keyframes sliders {
+    @keyframes right-side {
         0% {
             opacity: 0;
             transform: translateX(100%);
@@ -109,73 +131,118 @@
             transform: translateX(0);
         }
     }
+    
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #333;
+    }
+    
+    h2::after {
+        margin: 2px auto;
+        content: '';
+        display: block;
+        border-bottom: 2px solid goldenrod;
+        width: 200px;
+    }
 </style>
 
 <body>
+
+    <header>
+
+    </header>
+    <h2>Animation</h2>
     <div class="container">
-        <div class="box">
-            <div class="inner-box">
-                <img src="https://i.pinimg.com/474x/c5/81/89/c58189a0a7aaad0741fef2338c63acb0.jpg" alt="cus">
-                <h1>Order Now Below</h1>
+        <div class="box-one">
+            <div class="box">
+                <div class="inner-box">
+                    <img src="https://i.pinimg.com/474x/c5/81/89/c58189a0a7aaad0741fef2338c63acb0.jpg" alt="cus">
+                    <h1>Order Now Below</h1>
+                </div>
+                <div class="content">
+                    <span>$12.39</span>
+                    <button class="btn">Order</button>
+                </div>
             </div>
-            <div class="content">
-                <span>$12.39</span>
-                <button class="btn">Order</button>
+
+            <div class="box">
+                <div class="inner-box">
+                    <img src="https://i.pinimg.com/474x/41/90/94/419094de7f88c006a9b12aa0c8f43822.jpg" alt="">
+                    <h1>Order Now Below</h1>
+                </div>
+                <div class="content">
+                    <span>$14.99</span>
+                    <button class="btn">Order</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="inner-box">
+                    <img src="https://i.pinimg.com/474x/5a/92/17/5a9217fbea933f412e772803f19c8524.jpg" alt="">
+                    <h1>Order Now Below</h1>
+                </div>
+                <div class="content">
+                    <span>$14.99</span>
+                    <button class="btn">Order</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="inner-box">
+                    <img src="https://i.pinimg.com/474x/fb/13/b4/fb13b47eb03c9a13ffdff3e1b52dcbe8.jpg" alt="">
+                    <h1>Order Now Below</h1>
+                </div>
+                <div class="content">
+                    <span>$9.99</span>
+                    <button class="btn">Order</button>
+                </div>
             </div>
         </div>
 
-        <div class="box">
-            <div class="inner-box">
-                <img src="https://i.pinimg.com/474x/41/90/94/419094de7f88c006a9b12aa0c8f43822.jpg" alt="">
-                <h1>Order Now Below</h1>
-            </div>
-            <div class="content">
-                <span>$14.99</span>
-                <button class="btn">Order</button>
-            </div>
-        </div>
+        <div class="box-two">
+            <div class="box1">
 
-        <div class="box">
-            <div class="inner-box">
-                <img src="https://i.pinimg.com/474x/fb/13/b4/fb13b47eb03c9a13ffdff3e1b52dcbe8.jpg" alt="">
-                <h1>Order Now Below</h1>
+                <div class="inner-box">
+                    <img src="https://i.pinimg.com/474x/52/9b/4c/529b4cfcf44f07ab38138008b89b7d0e.jpg" alt="cus">
+                    <h1>Order Now Below</h1>
+                </div>
+                <div class="content">
+                    <span>$11.49</span>
+                    <button class="btn">Order</button>
+                </div>
             </div>
-            <div class="content">
-                <span>$9.99</span>
-                <button class="btn">Order</button>
-            </div>
-        </div>
 
-        <div class="box1">
-            <div class="inner-box">
-                <img src="https://i.pinimg.com/474x/c5/81/89/c58189a0a7aaad0741fef2338c63acb0.jpg" alt="cus">
-                <h1>Order Now Below</h1>
+            <div class="box1">
+                <div class="inner-box">
+                    <img src="https://i.pinimg.com/474x/41/90/94/419094de7f88c006a9b12aa0c8f43822.jpg" alt="">
+                    <h1>Order Now Below</h1>
+                </div>
+                <div class="content">
+                    <span>$13.29</span>
+                    <button class="btn">Order</button>
+                </div>
             </div>
-            <div class="content">
-                <span>$11.49</span>
-                <button class="btn">Order</button>
-            </div>
-        </div>
 
-        <div class="box1">
-            <div class="inner-box">
-                <img src="https://i.pinimg.com/474x/41/90/94/419094de7f88c006a9b12aa0c8f43822.jpg" alt="">
-                <h1>Order Now Below</h1>
+            <div class="box1">
+                <div class="inner-box">
+                    <img src="https://i.pinimg.com/474x/52/9b/4c/529b4cfcf44f07ab38138008b89b7d0e.jpg" alt="cus">
+                    <h1>Order Now Below</h1>
+                </div>
+                <div class="content">
+                    <span>$10.99</span>
+                    <button class="btn">Order</button>
+                </div>
             </div>
-            <div class="content">
-                <span>$13.29</span>
-                <button class="btn">Order</button>
-            </div>
-        </div>
-
-        <div class="box1">
-            <div class="inner-box">
-                <img src="https://i.pinimg.com/474x/fb/13/b4/fb13b47eb03c9a13ffdff3e1b52dcbe8.jpg" alt="">
-                <h1>Order Now Below</h1>
-            </div>
-            <div class="content">
-                <span>$10.99</span>
-                <button class="btn">Order</button>
+            <div class="box1">
+                <div class="inner-box">
+                    <img src="https://i.pinimg.com/474x/41/90/94/419094de7f88c006a9b12aa0c8f43822.jpg" alt="">
+                    <h1>Order Now Below</h1>
+                </div>
+                <div class="content">
+                    <span>$13.29</span>
+                    <button class="btn">Order</button>
+                </div>
             </div>
         </div>
     </div>
