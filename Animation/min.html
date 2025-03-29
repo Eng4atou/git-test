@@ -32,8 +32,10 @@
             font-weight: bold;
             font-size: 64px;
             border-right: 4px solid red;
-            animation: typing steps(21) 4s infinite alternate, cursor 0.8s infinite;
+            animation: typing steps(27) 4s forwards, cursor 0.8s step-end 3;
+            /* animation: typing steps(21) 4s infinite alternate, cursor 0.8s infinite; */
             white-space: nowrap;
+            opacity: 0;
             overflow: hidden;
             color: #fff;
         }
@@ -52,9 +54,11 @@
         
         @keyframes typing {
             0% {
+                opacity: 0;
                 width: 0ch;
             }
             100% {
+                opacity: 1;
                 width: 27ch;
             }
         }
