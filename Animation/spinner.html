@@ -24,7 +24,7 @@
     
     .flag {
         background: dodgerblue;
-        width: 200px;
+        width: 400px;
         height: 200px;
         display: flex;
         justify-content: center;
@@ -41,7 +41,7 @@
     .flag-somaliland {
         width: 400px;
         height: 200px;
-        margin: 100px auto;
+        /* margin: 100px auto; */
     }
     
     .green-sec {
@@ -68,21 +68,30 @@
         width: 400px;
         height: 60px;
     }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 100px auto;
+    }
 </style>
 
 <body>
-    <div class="flag">
-        <div class="star"></div>
+    <main class="wrapper">
+        <div class="flag">
+            <div class="star"></div>
 
-    </div>
+        </div>
 
-    <div class="spiner"></div>
+        <!-- <div class="spiner"></div> -->
 
-    <div class="flag-somaliland">
-        <div class="green-sec">لا إله إلا الله محمد رسول الله</div>
-        <div class="white-star"></div>
-        <div class="red-sec"></div>
-    </div>
+        <div class="flag-somaliland">
+            <div class="green-sec">لا إله إلا الله محمد رسول الله</div>
+            <div class="white-star"></div>
+            <div class="red-sec"></div>
+        </div>
+    </main>
 
 </body>
 
