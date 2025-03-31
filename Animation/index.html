@@ -9,18 +9,21 @@
 </head>
 <style>
     /* reset css */
+    /* Import Google Fonts */
     
     @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+    /* Reset Styles */
+    
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    /* general style */
+    /* General Styles */
     
     body {
         font-family: "Oleo Script", system-ui;
-        font-weight: 1;
+        font-weight: 400;
         line-height: 1.5;
         background: #f0f0f0;
     }
@@ -28,23 +31,25 @@
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* position: relative;
-        top: 20%; */
     }
     
-    .flex-container {
+    .flex-container,
+    .box1 {
         background: #fff;
         width: 380px;
         height: 280px;
-        gap: 10px;
         margin: 20px auto;
+        opacity: 0;
     }
+    /* Image Styling */
     
-    .flex-container img {
+    .flex-container img,
+    .box1 img {
         width: 100%;
         height: 150px;
         object-fit: cover;
     }
+    /* Text Styling */
     
     h1 {
         text-align: center;
@@ -59,8 +64,8 @@
         display: flex;
         justify-content: space-between;
         padding: 0 10px;
-        margin-left: 10px;
     }
+    /* Button */
     
     .btn {
         border: none;
@@ -68,12 +73,88 @@
         color: white;
         padding: 2px 35px;
     }
+    /* Typing Animation */
+    
+    h2 {
+        text-align: center;
+        padding: 20px;
+        font-size: 2.5rem;
+        overflow: hidden;
+        margin: 8px auto;
+        display: block;
+        border-right: 2px solid red;
+        white-space: nowrap;
+        animation: typing 3s steps(20) infinite alternate, cursorBlink 0.6s infinite;
+    }
+    
+    @keyframes typing {
+        0% {
+            width: 0ch;
+        }
+        100% {
+            width: 20ch;
+        }
+    }
+    
+    @keyframes cursorBlink {
+        0%,
+        40% {
+            border-color: transparent;
+        }
+        100% {
+            border-color: red;
+        }
+    }
+    /* Left Slide Animation */
+    
+    .box1 {
+        animation: left-side 1.5s forwards;
+    }
+    
+    @keyframes left-side {
+        from {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    /* Right Slide Animation */
+    
+    .box2 {
+        animation: right-side 1.5s forwards;
+    }
+    
+    @keyframes right-side {
+        from {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 </style>
 
 <body>
+    <h2>Welcome To My Practice</h2>
     <!-- animation -->
     <div class="grid-container">
-        <div class="flex-container">
+        <div class=" box1">
+            <div class="img">
+                <img src="https://i.pinimg.com/474x/dd/d8/f1/ddd8f1ca2b564d11f1832f5f4d9bd06b.jpg" alt="">
+            </div>
+            <h1 class="title">Face Care</h1>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, eius!</p>
+            <div class="content">
+                <span>$12.5</span>
+                <button type="submit" class="btn">Click</button>
+            </div>
+        </div>
+        <div class="flex-container box2">
             <div class="img">
                 <img src="https://i.pinimg.com/474x/dd/d8/f1/ddd8f1ca2b564d11f1832f5f4d9bd06b.jpg" alt="">
             </div>
@@ -85,7 +166,7 @@
             </div>
         </div>
         <!-- box2 -->
-        <div class="flex-container">
+        <div class=" box1">
             <div class="img">
                 <img src="https://i.pinimg.com/474x/dd/d8/f1/ddd8f1ca2b564d11f1832f5f4d9bd06b.jpg" alt="">
             </div>
@@ -97,19 +178,9 @@
             </div>
         </div>
         <!-- box3 -->
-        <div class="flex-container">
-            <div class="img">
-                <img src="https://i.pinimg.com/474x/dd/d8/f1/ddd8f1ca2b564d11f1832f5f4d9bd06b.jpg" alt="">
-            </div>
-            <h1 class="title">Face Care</h1>
-            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, eius!</p>
-            <div class="content">
-                <span>$12.5</span>
-                <button type="submit" class="btn">Click</button>
-            </div>
-        </div>
+
         <!-- box4-->
-        <div class="flex-container">
+        <div class="flex-container box2">
             <div class="img">
                 <img src="https://i.pinimg.com/474x/dd/d8/f1/ddd8f1ca2b564d11f1832f5f4d9bd06b.jpg" alt="">
             </div>

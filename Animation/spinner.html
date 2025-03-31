@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation </title>
+</head>
+<style>
+    .spiner {
+        background: crimson;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 25px solid white;
+        border-top: 20px solid indigo;
+        animation: ani 2.5s linear infinite;
+    }
+    
+    @keyframes ani {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .flag {
+        background: dodgerblue;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .star {
+        width: 100px;
+        height: 100px;
+        background: white;
+        clip-path: polygon( 50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+    
+    .flag-somaliland {
+        width: 400px;
+        height: 200px;
+        margin: 100px auto;
+    }
+    
+    .green-sec {
+        background: green;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+    }
+    
+    .white-star {
+        background: #000;
+        width: 100px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto;
+        object-fit: cover;
+        clip-path: polygon( 50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+    
+    .red-sec {
+        background: crimson;
+        width: 400px;
+        height: 60px;
+    }
+</style>
+
+<body>
+    <div class="flag">
+        <div class="star"></div>
+
+    </div>
+
+    <div class="spiner"></div>
+
+    <div class="flag-somaliland">
+        <div class="green-sec">لا إله إلا الله محمد رسول الله</div>
+        <div class="white-star"></div>
+        <div class="red-sec"></div>
+    </div>
+
+</body>
+
+</html>
