@@ -56,16 +56,29 @@
     
     .card p {
         font-size: 15px;
-        animation: wlk 4s forwards;
+        animation: wlk 9s forwards;
     }
     
     @keyframes wlk {
         0% {
-            transform: translateX(-100%);
+            transform: translateX(-10%);
         }
         100% {
             transform: translateX(0);
         }
+    }
+    
+    .author {
+        margin-top: 10px;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .author img {
+        border-radius: 50%;
+        width: 40px;
+        object-fit: cover;
     }
 </style>
 
@@ -76,7 +89,12 @@
             <img src="https://i.pinimg.com/474x/1b/4c/90/1b4c907694a6cc1ce1bcd66e09366929.jpg" alt="pic">
             <h2>hello world</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, possimus.</p>
+            <div class="author">
+                <img class="profile" src="https://i.pinimg.com/474x/3a/08/69/3a0869ace9329cd5b6ce0405c979e5a7.jpg" alt="profile">
+                <span class="author-name">Eng4atou</span>
+            </div>
         </div>
+
     </div>
 
 </body>
