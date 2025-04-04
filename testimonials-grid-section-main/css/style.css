@@ -1,0 +1,66 @@
+/* reset css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* general style */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+
+/* main style */
+
+
+/* .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    gap: 20px;
+}
+
+.content-danial {
+    background: palevioletred;
+    width: 200px;
+    height: 200px;
+}
+
+.content-jonathan {
+    background: plum;
+    width: 200px;
+    height: 200px;
+}
+
+.content-Jeanette {
+    background: palegreen;
+    width: 200px;
+    height: 200px;
+}
+
+.content-patrick {
+    background: lightseagreen;
+    width: 200px;
+    height: 200px;
+}
+
+.content-kira {
+    background: khaki;
+    width: 200px;
+    height: 200px;
+}
