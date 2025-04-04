@@ -80,3 +80,9 @@ a {
     text-decoration: none;
     color: #fff;
 }
+
+a::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #ffda79;
+}
