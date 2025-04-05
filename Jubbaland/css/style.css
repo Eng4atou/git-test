@@ -134,8 +134,9 @@ a:hover {
 /* Explore Button */
 
 .btn-explore:hover {
-    background: #ff9f1a;
-    padding: 1em 2em;
+    margin-top: 3rem;
+    /* background: #ff9f1a; */
+    padding: .5rem 1rem;
     transform: scale(1.05);
 }
 
